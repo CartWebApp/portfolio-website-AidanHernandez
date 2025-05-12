@@ -5,7 +5,7 @@ window.addEventListener('scroll', () => {
   if(scrollTop <= 5){
     document.querySelector("nav").classList.remove("expand");
   }
-  else if(scrollTop >= 104){
+  else if(scrollTop >= 10){
     document.querySelector("nav").classList.add("expand");
   }
 });

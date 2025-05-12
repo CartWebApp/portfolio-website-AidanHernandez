@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jersey+15&family=Rye&display=swap');
 
+@font-face {
+    font-family: sands;
+    src: url('font/canvasSands.ttf')
+}
+
 * {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -22,10 +27,10 @@ body {
 nav {
     position: fixed;
     display: inline-flex;
-    width: 72%;
-    left: 15%;
+    width: 90%;
+    left: 5%;
     transition: width 0.5s ease, left 0.5s ease, border-radius 0.5s ease, top 0.5s ease, background-color 0.5s ease;
-    height: 100px;
+    height: 90px;
     border: 4px solid #211102;
     border-radius: 35px;
     border-bottom: 0;
@@ -38,8 +43,8 @@ nav {
 
 nav>div>h2 {
     color: #D2A461;
-    font-size: 35px;
-    margin-right: 20px;
+    font-size: 2em;
+    margin-right: 5%;
 }
 
 nav>div {
@@ -67,8 +72,8 @@ nav.expand {
 }
 
 nav>img {
-    width: 200px;
-    margin-left: 20px;
+    transform: scale(90%);
+   
 }
 
 body > h2{
@@ -76,3 +81,79 @@ body > h2{
     margin-top: 150px;
 }
 
+.map{
+    position: absolute;
+    width: 55%;
+    transform: rotate(-90deg);
+    top: 40%;
+}
+
+.topPart{
+    position: absolute;
+    width: 30%;
+    top: 35%;
+
+}
+
+.container{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    background-color: #f0f8ff;
+    top: 55%;
+    display: flex;
+}
+
+.left,.right{
+    width: 50%;
+    height: 100%;
+}
+
+.left{
+    background-color: #011B10;
+}
+
+.right{
+    background-color: #F2F5E6;
+}
+
+.logo, .phone, .email{
+    position: absolute;
+}
+
+.logo{
+    top: 36%;
+    width: 80px;
+    right: 36%;
+}
+
+.phone{
+    top: 45%;
+    left: 36%;
+    width: 1.2%;
+}
+
+.email{
+    
+    top: 50%;
+    left: 36%;
+    width: 1.2%;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+main > section > header > aside > h2{
+    font-family: sands;
+    color: white;
+    position: absolute;
+    left: 37%;
+    top: 14%;
+    background-color: #011B10;
+    padding: 15px;
+    border-radius: 40px;
+}

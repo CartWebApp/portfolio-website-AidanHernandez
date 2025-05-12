@@ -42,7 +42,7 @@ nav {
 
 nav>div>h2 {
     color: #D2A461;
-    font-size: 1.3em;
+    font-size: 2em;
     margin-right: 5%;
 }
 
@@ -56,7 +56,7 @@ nav>div {
 
 nav>div>img {
     height: 100%;
-    width: 13%;
+    width: 10%;
 }
 
 
@@ -77,21 +77,21 @@ nav>img {
 
 
 header {
-    position: absolute;
+    
     display: flex;
     width: 73%;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
     /* margin-top: 250px; */
-    height: 100%;
+    height: 95%;
     z-index: 2;
 }
 
 
 
 h1 {
-    font-size: 3.7em;
+    font-size: 5em;
 }
 
 header > aside > h2 {
@@ -111,7 +111,7 @@ header>img {
 
 
 .about {
-    margin-top: 800px;
+    
     z-index: 3;
     width: 100%;
     background-size: contain;
@@ -126,7 +126,7 @@ header>img {
     position: absolute;
     background-image: url(img/tree.png);
     width: 100%;
-    height: 800px;
+    height: 1200px;
     background-position: center;
     top: 250px;
     background-size: cover;
@@ -161,7 +161,7 @@ header>img {
 }
 
 .resume{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -174,21 +174,21 @@ header>img {
 .map{
     z-index: 3;
     background-image: url(img/map.png);
-    height: 1000px;
-    width: 100%;
+    
+    width: 80%;
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    top: 1200px;
+    top: 1400px;
 }
 
 .space{
-    top: 180%;
+    top: 1300px;
     z-index: 2;
     position: absolute;
     width: 100%;
-    height: 1060px;
+    height: 1300px;
     background-color: #1A100B;
 }
 
@@ -205,7 +205,7 @@ header>img {
 }
 
 .resume > aside >h2 {
-    font-size: 4em;
+    font-size: 5em;
     margin-bottom: 50px;
 }
 
@@ -227,7 +227,7 @@ header>img {
     width: 100%;
     height: 800px;
     background-position: center;
-    top: 330%;
+    top: 2300px;
     background-size: cover;
     transform: rotate(180deg);
     z-index: 1;
@@ -235,7 +235,7 @@ header>img {
 
 footer {
     z-index: 2;
-    margin-top: 25%;
+    margin-top: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -255,7 +255,7 @@ footer > p{
 }
 
 footer > img{
-    width: 20%;
+    width: 15%;
 }
 
 @media screen and (max-width:1440px){
