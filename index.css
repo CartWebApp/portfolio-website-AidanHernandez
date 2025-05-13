@@ -259,9 +259,65 @@ footer>img {
     width: 15%;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
+
+
+
+
+
+.home {
+    
+    display: inline-flex;
+}
+
+.home-content {
+    display: none;
+    position: absolute;
+    background-color: #211102ac;
+    top: 90px;
+    width: 100%;
+    left: 0%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.home-content a {
+    color: #D2A461;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.home-content a:hover {
+    background-color: #D2A461;
+    color: #211102;
+}
+
+.home:hover .home-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:1025px) {
@@ -316,7 +372,7 @@ footer>img {
 @media screen and (max-width:481px) {
     header {
         height: 676px;
-        flex-flow: column ;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
     }
@@ -330,95 +386,98 @@ footer>img {
         text-align: center;
         margin-bottom: 10%;
     }
-    header > img{
+
+    header>img {
         width: 50%;
     }
 
-    .treeOne{
+    .treeOne {
         height: 480px;
         top: 400px;
     }
 
-    .about > aside > h2{
+    .about>aside>h2 {
         font-size: 2em;
     }
 
-    .about > aside > p{
+    .about>aside>p {
         font-size: 1em;
     }
 
-    .about > aside:first-of-type > img{
+    .about>aside:first-of-type>img {
         width: 100px;
     }
 
-    .space{
+    .space {
         top: 800px;
         height: 700px;
     }
 
-    .map{
+    .map {
         width: 100%;
         top: 900px;
-            height: 600px;
+        height: 600px;
     }
 
-    .resume{
+    .resume {
         height: 500px;
     }
 
-    .resume > aside > h2{
+    .resume>aside>h2 {
         font-size: 2.1em;
     }
 
-    .resume > aside > p{
+    .resume>aside>p {
         font-size: 1.2em;
     }
 
-    .resume > aside > img{
+    .resume>aside>img {
         width: 125px;
     }
 
-    .treeTwo{
+    .treeTwo {
         top: 1160px;
     }
-    footer{
+
+    footer {
         margin-top: 40%;
     }
 
-    footer > h2{
+    footer>h2 {
         font-size: 2.1em;
     }
 
-    footer > p{
+    footer>p {
         font-size: 1.2em;
         text-align: center;
     }
 
-    footer > img{
+    footer>img {
         width: 30%;
     }
 
-    .hide{
+    .hide {
         display: none;
     }
 
-    .hamburger{
+    .hamburger {
         background-color: #67471F;
         width: 50px;
         height: 50px;
         margin-right: 5%;
         border-radius: 10px;
     }
-    .hamburger > img{
+
+    .hamburger>img {
         width: 50%;
     }
 
-    nav{
+    nav {
         justify-content: space-between;
         align-items: center;
     }
 
-    nav > img{
+    nav>img {
         width: 150px;
         color: aliceblue;
     }
