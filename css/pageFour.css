@@ -1,79 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jersey+15&family=Rye&display=swap');
 
-
-
-* {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #D2A461;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    background-image: url(../img/bg.png);
-    background-position: center;
-    background-size: contain;
-    overflow-x: hidden;
-    margin: 0;
-    width: 100%;
-}
-
-nav {
-    position: fixed;
-    display: inline-flex;
-    width: 90%;
-    left: 5%;
-    transition: width 0.5s ease, left 0.5s ease, border-radius 0.5s ease, top 0.5s ease, background-color 0.5s ease;
-    height: 90px;
-    border: 4px solid #211102;
-    border-radius: 35px;
-    border-bottom: 0;
-    top: 10px;
-    background-color: #211102ac;
-    box-shadow: 0px 0px 10px 0px #572e08;
-    z-index: 10;
-}
-
-
-nav>div>h2 {
-    color: #D2A461;
-    font-size: 2em;
-    margin-right: 5%;
-}
-
-nav>div {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-nav>div>img {
-    height: 100%;
-    width: 10%;
-}
-
-
-
-nav.expand {
-    /* animation: decreaseRadius 0.5s forwards; */
-    width: 99.8%;
-    left: 0;
-    border-radius: 0px;
-    top: 0px;
-    background-color: #211102;
-}
-
-nav>img {
-    transform: scale(90%);
-   
-}
 
 body > h2{
     font-size: 4em;
@@ -115,7 +40,7 @@ section > section > img{
     margin-right: 28%;
 }
 
-a{
+main >section > section> a{
     margin-top: 30px;
     font-size: 3em;
     color: #1A100B;

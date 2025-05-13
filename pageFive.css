@@ -99,7 +99,7 @@ main{
     z-index: 5;
     margin-top: 300px;
     text-align: center;
-    margin-bottom: 300px;
+    margin-bottom: 0px;
 }
 
 main > h2{
@@ -126,6 +126,12 @@ footer > section{
 }
 
 footer > section > img{
+    cursor: pointer;
     width: 10%;
-    
+    transition: transform 1s ease;
+}
+
+footer > section > img:hover{
+    transition: transform 1s ease;
+    transform: rotate(360deg);
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="pageTwo.css">
+    <link rel="stylesheet" href="css/shared.css">
 </head>
 
 <body>
@@ -12,35 +13,44 @@
     <nav class="scrolled">
         <img src="img/navIcon.png" alt="icon">
 
-        <div class="hide">
+        <div class="hide home" onclick="navSelection(`home`)">
             <h2>Home</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <img src="img/arrow.svg" alt="arrow" id="arrowHome">
+            <div class="home-content" id="homeContent">
+                <a href="index.html#header">Intro</a>
+                <a href="index.html#about">About Me</a>
+                <a href="index.html#resume">Resume/Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
         </div>
-        <div class="hide">
+        <div class="hide aboutNav"onclick="navSelection(`about`)" >
             <h2>About Me</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <img src="img/arrow.svg" alt="arrow" id="arrowAbout">
+            <div class="about-content" id="aboutContent">
+                <a href="pageTwo.html#header">Intro</a>
+                <a href="pageTwo.html#award">Awards</a>
+                <a href="pageTwo.html#curricular">Co-curricular</a>
+                <a href="pageTwo.html#after">After Highschool</a>
+            </div>
+        </div>
+        <div class="hide" >
+            <h2><a href="pageThree.html">Resume</a></h2>
         </div>
         <div class="hide">
-            <h2>Resume</h2>
-            <img src="img/arrow.svg" alt="arrow">
-        </div>
-        <div class="hide">
-            <h2>Portfolio</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <h2><a href="pageFour.html">Portfolio</a></h2>
         </div>
 
         <div class="hide">
-            <h2>Contact</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <h2><a href="pageFive.html">Contact</a></h2>
         </div>
 
-        <div class="hamburger">
+        <div class="hamburger hidden">
             <img src="img/hamburger.svg" alt="hamburger Menu">
         </div>
 
     </nav>
 
-    <header>
+    <header id="header">
         <h2>About Me</h2>
         <p>I may not be famous but i have a website</p>
     </header>
@@ -53,7 +63,7 @@
         </p>
     </section>
 
-    <section class="award">
+    <section class="award" id="award">
         <h2>Awards and achievements</h2>
         <aside>
             <aside>
@@ -68,14 +78,14 @@
         <p>California Junior Scholarship Award</p>
     </section>
 
-    <section class="curricular">
+    <section class="curricular" id="curricular">
         <h2>Co-curricular</h2>
         <p>Cross Country</p>
         <p>Track and Field</p>
         <p>Coding</p>
     </section>
 
-    <section class="after">
+    <section class="after" id="after">
         <h2>After High School</h2>
         <p>My plan is to go to Cal Tech and hopefully graduate and work as a software developer at a big company, or
             work independently </p>

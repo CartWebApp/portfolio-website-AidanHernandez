@@ -6,38 +6,45 @@
     <title>portfolio</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/shared.css">
 </head>
 
 <body>
 
+    
+
     <nav class="scrolled">
         <img src="img/navIcon.png" alt="icon">
 
-        <div class="hide home">
+        <div class="hide home" onclick="navSelection(`home`)">
             <h2>Home</h2>
-            <img src="img/arrow.svg" alt="arrow">
-            <div class="home-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <img src="img/arrow.svg" alt="arrow" id="arrowHome">
+            <div class="home-content" id="homeContent">
+                <a href="index.html#header">Intro</a>
+                <a href="index.html#about">About Me</a>
+                <a href="index.html#resume">Resume/Portfolio</a>
+                <a href="index.html#contact">Contact</a>
             </div>
         </div>
-        <div class="hide">
+        <div class="hide aboutNav"onclick="navSelection(`about`)" >
             <h2>About Me</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <img src="img/arrow.svg" alt="arrow" id="arrowAbout">
+            <div class="about-content" id="aboutContent">
+                <a href="pageTwo.html#header">Intro</a>
+                <a href="pageTwo.html#award">Awards</a>
+                <a href="pageTwo.html#curricular">Co-curricular</a>
+                <a href="pageTwo.html#after">After Highschool</a>
+            </div>
+        </div>
+        <div class="hide" >
+            <h2><a href="pageThree.html">Resume</a></h2>
         </div>
         <div class="hide">
-            <h2>Resume</h2>
-            <img src="img/arrow.svg" alt="arrow">
-        </div>
-        <div class="hide">
-            <h2>Portfolio</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <h2><a href="pageFour.html">Portfolio</a></h2>
         </div>
 
         <div class="hide">
-            <h2>Contact</h2>
-            <img src="img/arrow.svg" alt="arrow">
+            <h2><a href="pageFive.html">Contact</a></h2>
         </div>
 
         <div class="hamburger hidden">
@@ -46,7 +53,7 @@
 
     </nav>
 
-    <header>
+    <header id="header">
         <aside>
             <h1>WEB DESIGNER</h1>
             <h2>Made for Everybody and Anybody</h2>
@@ -56,11 +63,11 @@
 
 
 
-    <section class="about">
+    <section class="about" id="about">
         <aside>
             <h2>About Me</h2>
             <p>If you want to learn more about my achievements or plan out of high school click the button below </p>
-            <img src="img/buttONe.png" alt="Button">
+            <img src="img/buttONe.png" alt="Button" onclick="window.location.href='pageTwo.html'">
         </aside>
         <aside>
             <p>I’m aidan hernandez</p>
@@ -68,23 +75,23 @@
         </aside>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="resume">
         <aside>
             <h2>Resume</h2>
             <p>Check out my resume for previous jobs and qualifications</p>
-            <img src="img/ButtonTwo.png" alt="button">
+            <img src="img/ButtonTwo.png" alt="button" onclick="window.location.href='pageThree.html'">
         </aside>
         <aside>
             <h2>Portfolio</h2>
             <p>I have many other projects you can check out on my portfolio</p>
-            <img src="img/ButtonThree.png" alt="button">
+            <img src="img/ButtonThree.png" alt="button" onclick="window.location.href='pageFour.html'">
         </aside>
     </section>
 
-    <footer>
+    <footer id="contact">
         <h2>Contact</h2>
         <p>If you want to contact me for jobs or anything visit the contact page</p>
-        <img src="img/buttonFour.png" alt="button">
+        <img src="img/buttonFour.png" alt="button" onclick="window.location.href='pageFive.html'">
     </footer>
 
 
