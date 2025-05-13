@@ -99,6 +99,7 @@ main{
     z-index: 5;
     margin-top: 300px;
     text-align: center;
+    margin-bottom: 300px;
 }
 
 main > h2{

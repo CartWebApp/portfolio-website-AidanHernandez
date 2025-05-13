@@ -72,19 +72,19 @@ nav.expand {
 
 nav>img {
     transform: scale(90%);
-   
+
 }
 
 
 header {
-    
+
     display: flex;
     width: 73%;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
     /* margin-top: 250px; */
-    height: 95%;
+    height: 99vh;
     z-index: 2;
 }
 
@@ -94,11 +94,11 @@ h1 {
     font-size: 5em;
 }
 
-header > aside > h2 {
+header>aside>h2 {
     font-size: 2em;
 }
 
-header > aside  {
+header>aside {
     margin-right: 20px;
 }
 
@@ -111,7 +111,7 @@ header>img {
 
 
 .about {
-    
+
     z-index: 3;
     width: 100%;
     background-size: contain;
@@ -132,7 +132,7 @@ header>img {
     background-size: cover;
 }
 
-.about > aside{
+.about>aside {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,26 +141,26 @@ header>img {
     width: 50%;
 }
 
-.about > aside > h2{
+.about>aside>h2 {
     font-size: 4em;
 }
 
-.about > aside > p{
+.about>aside>p {
     width: 100%;
     font-size: 2em;
 }
 
-.about > aside:last-of-type > img{
+.about>aside:last-of-type>img {
     width: 35%;
 }
 
-.about > aside:first-of-type > img{
+.about>aside:first-of-type>img {
     width: 20%;
     margin-top: 20px;
-    
+
 }
 
-.resume{
+.resume {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -171,10 +171,10 @@ header>img {
     align-items: center;
 }
 
-.map{
+.map {
     z-index: 3;
     background-image: url(img/map.png);
-    
+
     width: 80%;
     position: absolute;
     background-size: contain;
@@ -183,7 +183,7 @@ header>img {
     top: 1400px;
 }
 
-.space{
+.space {
     top: 1300px;
     z-index: 2;
     position: absolute;
@@ -192,11 +192,12 @@ header>img {
     background-color: #1A100B;
 }
 
-.resume > aside >h2, .resume > aside > p{
- color: #1A100B;
+.resume>aside>h2,
+.resume>aside>p {
+    color: #1A100B;
 }
 
-.resume > aside{
+.resume>aside {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -204,24 +205,24 @@ header>img {
     width: 50%;
 }
 
-.resume > aside >h2 {
+.resume>aside>h2 {
     font-size: 5em;
     margin-bottom: 50px;
 }
 
-.resume > aside > p{
-    
+.resume>aside>p {
+
     font-size: 2em;
     width: 80%;
     margin-bottom: 50px;
 }
 
 
-.resume > aside > img{
+.resume>aside>img {
     width: 40%;
 }
 
-.treeTwo{
+.treeTwo {
     position: absolute;
     background-image: url(img/tree.png);
     width: 100%;
@@ -244,20 +245,181 @@ footer {
 }
 
 
-footer > h2{
+footer>h2 {
     font-size: 4em;
     z-index: 7;
 }
 
-footer > p{
+footer>p {
     font-size: 2em;
-    
+
 }
 
-footer > img{
+footer>img {
     width: 15%;
 }
 
-@media screen and (max-width:1440px){
-    
+.hidden{
+    display: none;
+}
+
+
+@media screen and (max-width:1025px) {
+    nav>div>h2 {
+        font-size: 1.4em;
+    }
+
+    nav>div>img {
+        width: 13%;
+
+    }
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .resume {
+        /* height: 500px; */
+    }
+
+    .map {
+        height: 800px;
+    }
+
+    .resume>aside>h2 {
+        font-size: 3.5em;
+    }
+
+    .space {
+        height: 900px;
+    }
+
+    .treeTwo {
+        top: 1900px;
+    }
+
+    footer {
+        margin-top: 15%;
+    }
+
+    footer>img {
+        width: 20%;
+    }
+
+    .about>aside:first-of-type>img {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width:481px) {
+    header {
+        height: 676px;
+        flex-flow: column ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    header>aside>h2 {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    header > img{
+        width: 50%;
+    }
+
+    .treeOne{
+        height: 480px;
+        top: 400px;
+    }
+
+    .about > aside > h2{
+        font-size: 2em;
+    }
+
+    .about > aside > p{
+        font-size: 1em;
+    }
+
+    .about > aside:first-of-type > img{
+        width: 100px;
+    }
+
+    .space{
+        top: 800px;
+        height: 700px;
+    }
+
+    .map{
+        width: 100%;
+        top: 900px;
+            height: 600px;
+    }
+
+    .resume{
+        height: 500px;
+    }
+
+    .resume > aside > h2{
+        font-size: 2.1em;
+    }
+
+    .resume > aside > p{
+        font-size: 1.2em;
+    }
+
+    .resume > aside > img{
+        width: 125px;
+    }
+
+    .treeTwo{
+        top: 1160px;
+    }
+    footer{
+        margin-top: 40%;
+    }
+
+    footer > h2{
+        font-size: 2.1em;
+    }
+
+    footer > p{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    footer > img{
+        width: 30%;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .hamburger{
+        background-color: #67471F;
+        width: 50px;
+        height: 50px;
+        margin-right: 5%;
+        border-radius: 10px;
+    }
+    .hamburger > img{
+        width: 50%;
+    }
+
+    nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav > img{
+        width: 150px;
+        color: aliceblue;
+    }
 }

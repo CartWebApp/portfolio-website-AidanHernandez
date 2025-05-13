@@ -68,7 +68,11 @@ nav.expand {
 
 nav>img {
     transform: scale(90%);
-   
+
+}
+
+.hidden{
+    display: none;
 }
 
 
@@ -177,4 +181,101 @@ header > p {
 
 .after > p{
     font-size: 30px;
+}
+
+@media screen and (max-width:1025px) {
+    nav>div>h2 {
+        font-size: 1.4em;
+    }
+
+    nav>div>img {
+        width: 13%;
+
+    }
+
+}
+
+@media screen and (max-width:481px) {
+    
+
+    .hide{
+        display: none;
+    }
+
+    .hamburger{
+        background-color: #67471F;
+        width: 50px;
+        height: 50px;
+        margin-right: 5%;
+        border-radius: 10px;
+    }
+    .hamburger > img{
+        width: 50%;
+    }
+
+    nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav > img{
+        width: 150px;
+        color: aliceblue;
+    }
+
+    header{
+        margin-top: 35%;
+    }
+
+    header > h2{
+        font-size: 50px;
+    }
+
+    header > p{
+        font-size: 25px;
+    }
+
+    .typeWriter{
+        margin-top: 350px;
+    }
+
+    .typeWriter > img{
+        width: 200px;
+    }
+
+    .typeWriter > p{
+        font-size: 20px;
+    }
+
+    .award > h2{
+        font-size: 30px;
+    }
+
+    .award > aside > aside > p{
+        font-size: 20px;
+    }
+
+    .award > p{
+        font-size: 20px;
+    }
+
+    .award > aside > aside > img{
+        width: 100px;
+    }
+
+    .curricular > h2{
+        font-size: 35px;
+    }
+
+    .curricular > p{
+        font-size: 20px;
+    }
+
+    .after > h2{
+        font-size: 35px;
+    }
+
+    .after > p{
+        font-size: 20px;
+    }
 }
