@@ -71,3 +71,12 @@ section > section > p{
 #carousel.cycleFour{
     right: 290%;
 }
+
+
+#next{
+    position: absolute;
+    bottom: 12%;
+    width: 70px;
+    right: 35%;
+    cursor: pointer;
+}
